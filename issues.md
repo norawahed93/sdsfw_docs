@@ -17,3 +17,6 @@ When auto-populate listing, the framework will retrieve default 10 records even 
 		return checkAutomation(invocation);
 	}
 	```
+4. UI to follow [SAINS UX/UI Guidelines].
+5. Use [Datatable] to list records as this library supports responsive, sorting & search.
+6. Add front-end validation and highlight fields with error upon form submit.
