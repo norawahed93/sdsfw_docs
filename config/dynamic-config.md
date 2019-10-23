@@ -155,8 +155,8 @@ The add / edit page URL will be `loadAddPage{dynamicActionName}()` and `loadEdit
 By default, the functions `loadAddPage()` and `loadEditPage()` return `load_add_page` and `load_edit_page` respectively.
 
 ```xml
-<action name="*Parent" method="{1}" class="com.coris.ParentAction">
-	<result name="load_add_page" >/coris/addParent.jsp</result>
-	<result name="load_edit_page" >/coris/editParent.jsp</result>
+<action name="*Parent" method="{1}" class="com.sample.ParentAction">
+	<result name="load_add_page" >/sample/addParent.jsp</result>
+	<result name="load_edit_page" >/sample/editParent.jsp</result>
 </action>
 ```
