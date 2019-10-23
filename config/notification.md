@@ -9,7 +9,7 @@ Here we can define the notification message and related information.
 The `Body` field accepts HTML codes and can be previewed after saving the record. Parameters are also accepted in `<param>paramName</param>` format. Any parameters will be substituted before the notification is sent.
 
 Sample:  
-<img src="/sdsfw_docs/images/notification/sample-body.png" alt="sample body" />
+<img class="img-bordered" src="/sdsfw_docs/images/notification/sample-body.png" alt="sample body" />
 
 ## Auto Email / SMS Notification
 
@@ -27,7 +27,7 @@ Here we can configure the Action and Method name to trigger the notification. Al
 > The Email / SMS setup can also be configured as a workflow. To use `Workflow`, contact the framework developer.
 
 Sample:  
-<img src="/sdsfw_docs/images/notification/sample-notification.png" alt="sample notification" />
+<img class="img-bordered" src="/sdsfw_docs/images/notification/sample-notification.png" alt="sample notification" />
 
 ## Configure AuthorizationInterceptor.java
 

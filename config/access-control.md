@@ -14,7 +14,7 @@ To utilise the framework's access control, we need to configure Application and 
 	> A module can also be configured as a sub module.
 	
 	Sample:	
-	<img src="/sdsfw_docs/images/access-control/sample-module.png" alt="sample module" />
+	<img class="img-bordered" src="/sdsfw_docs/images/access-control/sample-module.png" alt="sample module" />
 	
 1. Navigate to **System Administration > Application Setup**.
 
@@ -43,7 +43,7 @@ To utilise the framework's access control, we need to configure Application and 
 	> The `Invoking Methods` field accepts multiple methods, just separate the methods with a comma. E.g. `processAddRights, processDeleteRights`
 		
 	Sample:	
-	<img src="/sdsfw_docs/images/access-control/sample-application.png" alt="sample application" />
+	<img class="img-bordered" src="/sdsfw_docs/images/access-control/sample-application.png" alt="sample application" />
 		
 ## User Group
 
@@ -55,4 +55,4 @@ Create a user group by adding users and assigning applications to that group.
 > The User Group can also be configured as a workflow. To use `Workflow`, contact the framework developer.
 
 Sample:	
-<img src="/sdsfw_docs/images/access-control/sample-user-group.png" alt="sample user group" />
+<img class="img-bordered" src="/sdsfw_docs/images/access-control/sample-user-group.png" alt="sample user group" />
