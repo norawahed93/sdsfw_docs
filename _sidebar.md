@@ -14,4 +14,6 @@
 	- [Auto Notification](config/notification.md)
 	- [Dynamic Config](config/dynamic-config.md)
 	
+- [**Security**](security.md)
+	
 - [**Known Issues**](issues.md)

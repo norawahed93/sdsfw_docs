@@ -22,7 +22,7 @@ Checkout the framework from <svn://10.17.100.38/java_training> into your Project
 ## Database
 Next, we need to setup the database structure for the framework. Run the following script according to the database type that you want to use. The script will setup the default data for the framework, with sample pages & settings. It also creates an admin user account that we can use for system administration later.
 
-**MySQL** - <a href="/downloads/db-setup-mysql.sql">/downloads/db-setup-mysql.sql</a>  
+**MySQL** - <a href="/sdsfw_docs/downloads/db-setup-mysql.sql">/downloads/db-setup-mysql.sql</a>  
 **MSSQL** - Coming soon! <!-- <a href="/downloads/db-setup-mssql.sql">/downloads/db-setup-mssql.sql</a> -->  
 **Oracle** - Coming soon! <!-- <a href="/downloads/db-setup-oracle.sql">/downloads/db-setup-oracle.sql</a> --> 
 

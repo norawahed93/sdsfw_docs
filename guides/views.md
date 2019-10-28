@@ -12,7 +12,7 @@ Commonly used tags:
 <!-- get propertyName from properties file -->
 <s:text name="propertyName"/>
 
-<!-- get variable value, escape html be default -->
+<!-- get variable value, escape html by default -->
 <s:property value="varName"/>
 <s:property value="#session.userId"/>
 
