@@ -6,7 +6,7 @@ Each database table should have a corresponding "Model" which is used to interac
 
 The easiest way to create a model instance is by using the Model Generator. This tool will examine an existing table in our database and map it into a Model class.
 
-**Model Generator** - <a href="/downloads/ModelGenerator_java.rar" download>/downloads/ModelGenerator_java.rar</a>
+**Model Generator** - <a href="/sdsfw_docs/downloads/ModelGenerator_java.rar" download>/downloads/ModelGenerator_java.rar</a>
 
 ## Model Class Conventions
 
