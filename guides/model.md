@@ -209,7 +209,7 @@ public User() {
 	**E.g.** The value `"chk_col:Y,ref_parent_id,getID,Error Message"` will only check for recursive if the field `chk_col` value is `Y`.  
 
 In model class, the duplication check, required field, required field by range can be set up in the constructor.
-Following is an example:
+The following is an example:
 ```java
 public ParentModel() {
 	//duplication check
