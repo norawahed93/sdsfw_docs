@@ -207,7 +207,22 @@ public User() {
 	**Value:** `",ref_parent_id,getID,Error Message"` | `"chk_col:Y,ref_parent_id,getID,Error Message"`  
 	**Format:** Check column value, column name (referencing to parent id), get parent id method name, and an error message, separated by comma. For conditional checking, specify the column name to be checked followed by ':' and value before the first comma.  
 	**E.g.** The value `"chk_col:Y,ref_parent_id,getID,Error Message"` will only check for recursive if the field `chk_col` value is `Y`.  
+
+In model class, the duplication check, required field, required field by range can be set up in the constructor.
+The following is an example:
+```java
+public ParentModel() {
+	//duplication check
+	userDefined_insertNoDuplicate("parent_name;Sample.parentName");
 	
+	//required field not empty before insert
+	userDefined_insertRequired("Parent_name;Sample.parentName,Parent_gender;Sample.parentGender,Parent_age;Sample.age");
+	
+	//required field not empty before update
+	userDefined_updateRequired("Parent_name;Sample.parentName");
+}
+```
+
 ## Model Events
 
 These are some methods that can be overriden to add in more logic during create / update / delete operations. For more methods list, refer to ModelBase.java.

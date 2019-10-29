@@ -5,8 +5,10 @@
 - Guides
 	- [Routing](guides/routing.md)
 	- [Actions / Controllers](guides/actions.md)
+	- [CRUD Action](guides/crud_action.md)
 	- [Views](guides/views.md)
 	- [Model](guides/model.md)
+	- [Create / Update / Delete Operations](guides/crud_operations.md)
 	- [Localization](guides/localization.md)
 
 - Configurations
