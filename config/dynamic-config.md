@@ -74,6 +74,29 @@ Sample:
 <!-- TODO : hiddenFields | Hidden inputs to be included in the search form. |  | -->
 <!-- TODO : searchInputStyleFormat_* |  |  | -->
 
+#### Dynamic Config Criteria
+By default, criterias will be searched using wildcards in lowercase. If you want to specify how each criteria will be searched, refer to following configurations. You just need to add any of following properties as a prefix when defining the `searchFieldsDbName` properties.
+
+Sample:
+```xml
+	<!-- original config -->
+	<property name="searchFieldsDbName" value="user_name, user_agency, user_status" />
+
+	<!-- modified config with criteria settings -->
+	<property name="searchFieldsDbName" value="user_name, _no_changeuser_agency, _no_changeuser_status" />
+```
+
+<!-- TODO :  | `_date_` 				| | | -->
+
+| Prefix				| Description 												| SQL Syntax												| 
+| --------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+|						| Convert input criteria to lowercase. Search with front and back wildcards. | lower(rtrim(ltrim(column))) like '%input%'	|
+| `_no_change` 			| Search exact value of criteria. 							| rtrim(ltrim(column)) = 'input'							|
+| `_no_change_lower`	| Convert input criteria to lowercase. Search exact value of criteria. | lower(rtrim(ltrim(column))) = 'input' 			|
+| `_wildCardFront` 		| Convert input criteria to lowercase. Search with front wildcard. | lower(rtrim(ltrim(column))) like '%input' |
+| `_wildCardBack` 		| Convert input criteria to lowercase. Search with back wildcard. | lower(rtrim(ltrim(column))) like 'input%' |
+| `NESTEDSQL`			| Specify custom criteria.					| Append prefix in SQL.										|
+
 #### Query
 
 | Name 					| Value 									| Description 																								| 
