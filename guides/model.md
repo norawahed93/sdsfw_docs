@@ -223,20 +223,6 @@ public ParentModel() {
 }
 ```
 
-## Model Events
-
-These are some methods that can be overriden to add in more logic during create / update / delete operations. For more methods list, refer to ModelBase.java.
-
-- `defaultAddProperties()`
-- `preInsert(Session session)`
-- `postInsert(Session session)`
-- `defaultUpdateProperties()` - any columns set in this function will have to be defined in the updatableColumns except updated_by/updated_date columns.
-- `preUpdate(Session session)` - any columns set in this function will bypass updatableColumns checking
-- `preUpdate(Session session, Object dataEntryModel)` - any columns set in this function will bypass updatableColumns checking
-- `postUpdate(Session session, Object updatingObject)`
-- `preDelete(Session session, Object deletingObject)`
-- `postDelete(Session session, Object deletingObject)`
-
 ## Loading Models
 
 After creating Model classes, we need to tell the framework to load these classes. This can be configured in `SessionFactoryImpl.java` in `init()` function.

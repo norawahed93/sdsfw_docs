@@ -1,14 +1,14 @@
-# Create / Update / Delete Operations
+# Model Events
 
-#### Validation for pre and post (insert, update, and delete)
-
-In model class, the validation for pre and post (insert, update, and delete) can be added. These are the methods that can be overriden.
+In model class, we can add more logic to be executed before and after a create / update / delete operation. These are the methods that can be overriden.
 
 | Method 									         | Description                                                            |
 | -------------------------------------------------- | ---------------------------------------------------------------------- |
+| defaultAddProperties()							 | Set default model properties before insert function is called.		  |
 | preInsert(Session session)                         | Explicit checks inside method before insert function is called.		  |
 | postInsert(Session session)                        | Explicit checks inside method when insert function finishes its work.  |
-| preUpdate(Session session)                         | Explicit checks inside method before update function is called.		  |
+| defaultUpdateProperties()							 | Set default model properties before update function is called. <br/><br/>**Note:** Any columns set in this function will have to be defined in the updatableColumns except updated_by / updated_date columns. |
+| preUpdate(Session session) / preUpdate(Session session, Object dataEntryModel) | Explicit checks inside method before update function is called. <br/><br/>**Note:** Any columns set in this function will bypass updatableColumns checking.	  |
 | postUpdate(Session session, Object updatingObject) | Explicit checks inside method when update function finishes its work.  |
 | preDelete(Session session, Object deletingObject)  | Explicit checks inside method before delete function is called.		  |
 | postDelete(Session session, Object deletingObject) | Explicit checks inside method when delete function finishes its work.  |
