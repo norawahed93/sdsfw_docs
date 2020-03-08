@@ -138,8 +138,8 @@ Sample:
 | decFormat_{*}			| &bull; {format}							| Specify the format to format a number column.																|
 | propertyText_{*}		| &bull; {property}							| Retrieve the label from properties file based on the property defined and the column's value.				|
 | styleFormat_{*}		| &bull; {inline CSS}						| Specify inline CSS for the column.																		|
+| functionText_{*}		| &bull; {Class;functionName;Param1Type;Param1Value}	| Specify function to format the value returned from query. The first param is the value returned from query. Other params are optional.		|
 
-<!-- TODO : functionText_* | com.elasis.cart.dao.PurchaseDetailDAOImpl;getPODNormalDesc;Boolean;false | -->
 <!-- TODO : styleFromPackage |  -->
 
 ## 2. Create Action class

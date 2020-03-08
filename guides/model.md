@@ -193,7 +193,7 @@ public User() {
 	**Format:** Each column name is followed by ';' and column label. Separate multiple columns with a comma.  	
 	
 - **userDefined_updateNoDuplicateRange(String)**  
-	**Description:** Will check there is no duplicate for each of the column sets defined before update. If not defined, will get the value from `userDefined_updateNoDuplicateRange()`.  
+	**Description:** Will check there is no duplicate for each of the column sets defined before update. If not defined, will get the value from `userDefined_insertNoDuplicateRange()`.  
 	**Value:** `"column_1,column_2;column_3,column_4"`  
 	**Format:** Column names separated by comma, different sets of columns separated by ';'.  	
 	
