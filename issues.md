@@ -10,7 +10,7 @@ When auto-populate listing, the framework will retrieve default 10 records even 
 # Suggestions
 
 1. Add option for application to open in a new tab.
-2. Show limited page numbers in pagination. Currently, will show 100 buttons for 100 pages.
+2. Show limited page numbers in pagination. Currently, will show 100 buttons for 100 pages (if not using datatable).
 3. Auto trigger notification instead of need to add Action class to `AuthorizationInterceptor.java` line 323.
 	```java
 	if (actionClass.equals("RegistrationAction") || actionClass.equals("LoginEssAction") || actionClass.equals("LoginEssAction")) {
@@ -18,5 +18,7 @@ When auto-populate listing, the framework will retrieve default 10 records even 
 	}
 	```
 4. UI to follow [SAINS UX/UI Guidelines].
-5. Use [Datatable] to list records as this library supports responsive, sorting & search.
-6. Add front-end validation and highlight fields with error upon form submit.
+5. Front-end validation to highlight fields with error upon form submit.
+
+
+[SAINS UX/UI Guidelines]: http://uxguidelines.sains.com.my/
