@@ -15,6 +15,7 @@
 	- [Access Control](config/access-control.md)
 	- [Auto Notification](config/notification.md)
 	- [Dynamic Config](config/dynamic-config.md)
+	- [Maintenance Mode](config/maintenance.md)
 	
 - [**Security**](security.md)
 	
