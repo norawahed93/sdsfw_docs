@@ -16,6 +16,8 @@
 	- [Auto Notification](config/notification.md)
 	- [Dynamic Config](config/dynamic-config.md)
 	- [Maintenance Mode](config/maintenance.md)
+	- [Schedular Maintenance](config/schedular.md)
+	- [Dynamic Report](config/dynamic-report.md)
 	
 - [**Security**](security.md)
 	
